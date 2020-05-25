@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+	
+    height: 100%;
+	overflow: hidden;/*清除浮动影响*/
+}
+span {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    pointer-events: none;/*清除鼠标事件*/
+    background-image: url(heart.png);
+    background-size: cover;
+    transform: translate(-50%,-50%);
+    animation: animate 2s linear infinite;/*绑定动画 播放时间2秒 播放速度相同  无线播放*/
+}
+/*写一个动画效果 在2秒内图片从居中向上移动并发生两次滤镜颜色转化*/
+@keyframes animate {
+	from{
+		transform: translate(-50%,-50%);
+		opacity: 1;
+		filter: hue-rotate(0deg);
+	}
+    to{
+        transform: translate(-50%,-500%);
+        opacity: 0;
+        filter: hue-rotate(720deg);
+    }
+}
