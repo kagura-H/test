@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>图片轮播</title>
+    <meta charset="utf-8"/>
+    <style type="text/css">
+    	*{
+    		padding: 0px;
+    		margin: 0px;
+    	}
+    	#carousel-inner{
+    		width: 100%;
+    		position: relative;
+    	}
+    	#carousel-inner .item{
+    		display: none;
+    	}
+    	#carousel-inner .active{
+    		display: block;
+    	}
+    	#carousel-inner .item img{
+    		width: 100%;
+    	}
+    	/*点点点*/
+    	#carousel-indicators{
+    		text-align: center;
+    		list-style: none;
+    		bottom: 10px;
+    		left: 50%;
+    		position: absolute;
+    	}
+    	#carousel-indicators ul li{
+    		display: inline-block;
+    		width: 10px;
+    		height: 10px;
+    		border-radius: 50%;
+    		border:solid #000 1px;
+    	}
+    	#carousel-indicators .liactive{
+    		background-color: #fff;
+    	}
+    	/*箭头*/
+    	.carousel-control{
+    		font-size: 72px;
+    		line-height: 72px;
+    		text-align:center;
+    		width: 72px;
+    		color: #fff;
+    		cursor: pointer;
+    		position: absolute;
+    		top:40%;
+    		opacity: 0;
+    	}
+    	.left{
+    		left: 0px;
+    	}
+    	.right{
+    		right: 0px;
+    	}
+    	.carousel-control:hover{
+    		opacity: 1;
+        }
+    	    </style>
+</head>
+<body>
+	<div id="carousel">
+		<div id="carousel-inner">
+			<div class="item">
+				<img src="images/call-center-voice.png" title="呼叫中心语音识别发布">
+			</div>
+			<div class="item">
+				<img src="images/structured-ocr.png" title="自定义模板文字识别发布">
+			</div>
+			<div class="item">
+				<img src="images/umin.jpg" title="UNIT 扫码接入微信公众号">
+			</div>
+			<div class="item">
+				<img src="images/body-analysis.jpg" title="人体分析正式上线">
+			</div>
+			<div id="carousel-indicators">
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>			
+            <div class="carousel-control left">&lsaquo;</div>
+            <div class="carousel-control right">&rsaquo;</div>
+		</div>
+		
+	</div>
+</body>
+</html>
+<script type="text/javascript" src="practice.js"></script>
