@@ -1,0 +1,78 @@
+body{
+	margin:0px; 
+	background: url(../img/a.jpg) no-repeat; 
+	background-size:100% 100%; 
+	background-attachment:fixed;
+}
+#hx{
+	margin-top: 100px;
+	margin-left: 10%;
+	width: 100%;
+	
+	border-top: solid #ACC0D8 2px;
+}
+#sx{
+	padding: 680px;
+	margin-left: 50%;
+	border-left: 1px solid #000;
+	
+
+}
+
+#zi{
+	font-family: "楷体";
+	font-size: 20px;
+	width: 30%;
+	position: absolute;
+	top: 25%;
+	left: 15%;
+}
+#zi a{
+	color: #000000;
+}
+#zi a:link, .nav a:visited{
+            text-decoration: none;
+            color: #212121;
+        }
+#zi  a:hover{
+            background-color: orangered;
+        }
+#tu img{
+	position: absolute;
+	top: 30%;
+	left: 55%;
+	width: 20%;
+}
+.xinwen_a #hx{
+	position: absolute;
+	top: 64%;
+	border-top: solid #ACC0D8 2px;
+}
+.xinwen_a #zi{
+	position: absolute;
+	top:75%;
+}
+.xinwen_a #tu img{
+width: 30%;
+position: absolute;
+top:80%;
+}
+.xinwen_b #hx{
+	position: absolute;
+	top:125%;
+	border-top: solid #ACC0D8 2px;
+}
+.xinwen_b #zi{
+	position: absolute;
+	top:140%;
+}
+.xinwen_b #tu img{
+	width: 15%;
+	position: absolute;
+	top: 145%;
+	}
+.bottom2{
+
+	background-color: #383838;
+	width: 100%;
+}

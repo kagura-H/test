@@ -1,0 +1,58 @@
+.h2{
+	padding-top: 10px;
+}
+#carousel-inner{
+	width: 100%;
+	position: relative;
+}
+#carousel-inner .item{
+	display: none;
+}
+#carousel-inner .active{
+	display: block;
+}
+#carousel-inner .item img{
+	width: 60%;
+	height: 60%;
+	margin-top: 30px;
+	margin-left: 20%;
+}
+#carousel-indicators{
+	text-align:center;
+	list-style: none;
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+}
+#carousel-indicators ul li{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	border: solid #000 1px;
+	cursor: pointer;
+}
+#carousel-indicators .liactive{
+	background-color: #fff;
+}
+.carousel-control{
+	font-size: 72px;
+	line-height: 72px;
+	text-align: center;
+	width: 72px;
+	color: #000000;
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	opacity: 0;	
+}
+.left{
+	left: 20%;
+	
+}
+.right{
+	right: 20%;
+}
+.carousel-control:hover{
+	opacity: 1;
+}

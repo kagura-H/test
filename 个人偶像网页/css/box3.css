@@ -1,0 +1,17 @@
+.box3{
+	line-height: 30px;
+	position: absolute;
+	top: 2%;
+	left: 90%;
+
+}
+.time1{
+	color: #858659;
+	font-size:30px ;
+	text-align: center;
+	}
+.time2{
+	color: #c8c8c8;
+	text-align: center;
+	font-size: 10px;
+	}

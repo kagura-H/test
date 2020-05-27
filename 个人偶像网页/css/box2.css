@@ -1,0 +1,56 @@
+.box{
+	margin-left: 50px;
+	font-size: 20px;
+}
+.box2{
+	position: absolute;
+	left: 30%;
+	top: 5%;
+}
+.nav {
+  display: inline-flex;
+  position: relative;
+  max-width: 100%;
+  background-color: #fff;
+  padding: 0 20px;
+  border-radius: 40px;
+  box-shadow: 0 10px 40px rgba(159, 162, 177, 0.8);
+}
+
+.nav-item {
+  color: #83818c;
+  padding: 20px;
+  text-decoration: none;//取消下划线
+  margin: 0 6px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  position: relative;
+}
+/*before 选择器在被选元素的内容前面插入内容。*/
+.nav-item:before {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #dfe2ea;
+  border-radius: 8px 8px 0 0;
+  opacity: 0;
+  transition: .3s;
+}
+.nav-item:hover:before {
+  opacity: 1;
+  bottom: 0;
+}
+.nav-item:hover {
+  color: #333;
+}
+#myBtn {
+	display: none;
+    position: fixed; 
+    bottom: 5%; 
+    right: 30px; 
+    padding: 5px; 
+    width: 5%;
+}

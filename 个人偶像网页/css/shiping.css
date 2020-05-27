@@ -1,0 +1,153 @@
+.sp{
+	display: grid;
+	grid-template-columns: 2fr 2fr;
+	padding-top: 50px;
+}
+.video_main p{
+	margin-left: 40%;
+}
+.video_main video{
+	margin-left: ;
+	width: 100%;
+}
+.dian {
+  display: flex;
+  flex-direction: row;
+  padding-left: 35%;
+}
+
+#zan,
+#cai {
+  width: 55px;
+  height: 22px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #F3F3F3;
+  margin: 0 10px;
+  border-radius: 6px;
+  user-select: none;
+  cursor: pointer;
+}
+
+#zan img,
+#cai img {
+  width: 20px;
+  height: 20px;
+  margin: 1px 5px 0 5px;
+}
+
+#zan #num1,
+#cai #num2 {
+  line-height: 22px;
+  margin-right: 3px;
+}
+.dian1 {
+  display: flex;
+  flex-direction: row;
+  padding-left: 35%;
+}
+
+#zan1,
+#cai1 {
+  width: 55px;
+  height: 22px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #F3F3F3;
+  margin: 0 10px;
+  border-radius: 6px;
+  user-select: none;
+  cursor: pointer;
+}
+
+#zan1 img,
+#cai1 img {
+  width: 20px;
+  height: 20px;
+  margin: 1px 5px 0 5px;
+}
+
+#zan1 #num3,
+#cai1 #num4 {
+  line-height: 22px;
+  margin-right: 3px;
+}
+.dian2 {
+  display: flex;
+  flex-direction: row;
+  padding-left: 35%;
+}
+
+#zan2,
+#cai2 {
+  width: 55px;
+  height: 22px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #F3F3F3;
+  margin: 0 10px;
+  border-radius: 6px;
+  user-select: none;
+  cursor: pointer;
+}
+
+#zan2 img,
+#cai2 img {
+  width: 20px;
+  height: 20px;
+  margin: 1px 5px 0 5px;
+}
+
+#zan2 #num5,
+#cai2 #num6 {
+  line-height: 22px;
+  margin-right: 3px;
+}
+.liuyan{
+	position: fixed;
+	top: 20%;
+	left:85%;
+    width: 200px;
+    margin: 50px auto 0;
+    color: white;
+	border: 1px solid #e5e5e5;
+	background-color: #ffaa7f;
+}
+.liuyan h2{
+                text-align: center;
+                height: 40px;
+				font-size: 24px;
+				line-height: 40px;
+				background: #ff8000;
+				
+				}
+.liuyan textarea{
+	width: 195px;
+	height: 60px;
+	resize: none;
+	}
+.liuyan input{
+	height: 40px;
+	width: 200px;
+	margin-bottom: 20px;
+	}
+	
+.liuyan ul{
+    width: 150px;
+    padding: 0 20px;
+    border-top: 2px solid #ffa44e;
+}
+.liuyan li{
+	list-style:none;
+	font-size: 20px;
+	line-height: 30px;
+	border-bottom: 2px solid #CD853F;
+	color: black;
+	}
+.liuyan li:nth-of-type(2n){
+	background: beige;
+	}
+	

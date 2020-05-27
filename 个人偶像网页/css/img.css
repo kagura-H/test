@@ -1,0 +1,38 @@
+.img{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 10%;
+	row-gap: 10%;
+	padding-top: 5%;
+}
+
+.imgages img{
+	width: 100%;
+}
+ #imgFrame{ 
+position: fixed; 
+left: 20%; 
+top: 15%; 
+z-index: 10;
+display: none;
+}
+#imgbox img{
+	width: 900px; /*宽度*/
+	padding: 50px; /*内边距*/
+	box-shadow: 0 5px 30px rgba(0,0,0,0.30); /*元素阴影 X偏移 Y偏移 阴影模糊半径 阴影颜色*/
+	background-color: #fff; /*背景颜色*/
+
+}
+#imgFrame a{
+	font-size:20px;
+	text-decoration: none; /*文本修饰（无下划线）*/
+	color: #000000;/*字体颜色*/
+	border:1px solid #ffaa7f;
+	background-color:#fffae8;
+}
+.bottom1{
+	position: absolute;
+	top:150%;
+	background-color: #383838;
+	width: 100%;
+}
