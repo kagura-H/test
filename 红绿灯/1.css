@@ -1,0 +1,24 @@
+ .box{
+	 width:300px;
+	 height:60px;
+	 padding:22px 30px;
+	 border:3px solid #ccc;
+	 border-radius:200px;
+	 margin:0 auto;
+	 }
+#red,#yellow,#green{
+	margin-left:5px;
+	float:left;
+	width:50px;
+	height:50px;
+	border-radius:10px;
+	border:5px solid #666;
+	border-radius: 50px;
+}
+#number{
+	font-size: 60px;
+	float: right;
+	margin-right:20px ;
+	margin-top: -5px;
+
+}
