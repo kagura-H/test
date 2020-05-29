@@ -1,0 +1,67 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <meta charset="UTF-8">
+     <title></title>
+     <style>
+         .container{/*设置整体大小*/
+             display: flex;
+             width: 100%;
+             padding: 4% 2%;
+             box-sizing: border-box;
+             height: 100vh;
+         }
+         .box{/*给每个图片加上边框 加指针变换效果*/
+             flex: 1;
+             overflow: hidden;/*当图片溢出就不显示*/
+             transition: 0.5s;
+             margin: 0 2%;
+             box-shadow: 0 20px 30px rgba(0,0,0,0.1);
+             line-height: 0;
+         }
+		 .box > img{/*对子代元素img设置属性*/
+		     width: 200%;
+		     height: calc(100% - 10vh);
+		     object-fit: cover;/*图片自适应*/
+		     transition: 0.5s;
+		 }
+		 .box > span{/*对子代元素span设置属性*/
+		     font-size: 3vh;
+		     display: block;
+		     text-align: center;
+		     height: 10vh;
+		     line-height: 2.5;
+		     font-family: tahoma;
+		     color: #333;
+		     text-transform: uppercase;/*字母大写*/
+		 }
+		 .box:hover{/*点击图片排列发上变化*/
+		     flex: 1 1 50%;
+		 }
+		 .box:hover > img{/*点击图片大小发上变化*/
+		     width: 100%;
+		     height: 100%;
+		 }
+     </style>
+ </head>
+ <body>
+     <div class="container">
+         <div class="box">
+             <img src="h1.JPG" alt="">
+             <span>a</span>
+         </div>
+         <div class="box">
+             <img src="h2.JPG" alt="">
+             <span>b</span>
+         </div> 
+          <div class="box">
+             <img src="h3.JPG" alt="">
+             <span>c</span>
+         </div>    
+          <div class="box">
+             <img src="h4.jpg" alt="">
+             <span>d</span>
+         </div>        
+     </div>
+ </body>
+ </html>
