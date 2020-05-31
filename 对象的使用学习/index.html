@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!-- 这个title代表的是网页的标题 -->
+		<title></title>
+		<!-- 通过样式来控制盒子的大小 -->
+		<style type="text/css">
+			/* #gameBox相当于id="gameBox" */
+			#gameBox {
+				width: 512px;
+				height: 768px;
+				border: 1px solid red;
+				/* 让这个盒子居中 */
+				/* margin-left: auto;
+				margin-right: auto; */
+				/* margin: 0 auto; */
+				margin: auto;
+			}
+		</style>
+
+	</head>
+	<body>
+		<!-- DIV相当于一个盒子 -->
+		<div id="gameBox">
+			<!-- 准备一个画布,设置画布的宽度与高度 ，可以把它看成是一个显示屏-->
+			<canvas id="game" width="512px" height="768"></canvas>
+		</div>
+	</body>
+	<script type="text/javascript" src="./js/BackGround.js"></script>
+	<script type="text/javascript">
+		//第一步：先拿到我们的画布【我要知道我在哪一块画版上面在绘画】
+		var game = document.getElementById("game");
+		//第二步：准备画笔去绘画,这个笔是进行2D绘画
+		var ctx = game.getContext("2d");
+
+		/**************加载游戏资源***********************/
+		//创建一个数组resource，把需要加载的资源放到这个数组里面
+		var resource = [
+			"./img/bg1.jpg"
+		];
+		//用于在保存加载好的资源
+		var resObj = [];
+
+		//封装一个方法，用于加载游戏资源
+		function loadResource() {
+			var count = 0; //代表游戏资源加载了多少个
+			//我们所有要加载的资源全部都放在刚刚的数组resource里面，所以我们直接把这个数组循环一下就可以了
+			for (var i = 0; i < resource.length; i++) {
+				var img = new Image();
+				img.src = resource[i];
+				// onload从服务器加载图片
+				img.onload = function() {
+					//每加载一个图片，我们就把count+1
+					count++;
+					//只要count与resource里面的游戏资源数相同，就说明资源加载完了
+					if (count == resource.length) {
+						//加载完了以后就可以开始游戏了,调用游戏开始的方法
+						startGame();
+					}
+				}
+				//将加载好的资源保存到resObj这个数组里面去
+				resObj.push(img);
+			}
+		}
+
+		/******************加载游戏资源以后就可以开始游戏了**********************/
+		//封装一个方法开始游戏
+		function startGame() {
+			//实例化一个背景对象
+			var bg = new BackGround(0,-768,resObj[0]);
+			//创建定时器，来绘制背景对象
+			setInterval(function(){
+				//把画笔ctx给bg,让bg自己来画
+				bg.draw(ctx);
+			},50);
+		}
+
+		//调用加载游戏资源的方法
+		loadResource();
+	</script>
+</html>
